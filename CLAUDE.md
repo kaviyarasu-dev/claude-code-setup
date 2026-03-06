@@ -2,24 +2,24 @@
 
 ## Skills
 
-| Command | Purpose | Model |
-|---------|---------|-------|
-| `/api` | Scaffold REST APIs (Laravel + React) | sonnet |
-| `/blueprint` | Decompose features into detailed task plans | opus |
-| `/debug` | Systematic debugging (Laravel + React) | opus |
-| `/deploy` | DevOps automation (Docker, CI/CD, nginx) | sonnet |
-| `/migrate` | Database migrations and schema design | sonnet |
-| `/n8n` | Build and debug n8n workflows | sonnet |
-| `/refactor` | Code refactoring with SOLID principles | opus |
-| `/security-scan` | OWASP security checklist | opus |
-| `/code-review` | Deep code review for files/directories | opus |
-| `/testing` | Generate or improve tests | sonnet |
-| `/documentation` | Generate or update documentation | sonnet |
-| `/commit` | Conventional commits with co-authorship | - |
-| `/review-pr` | PR review with quality/security checklist | opus |
-| `/catchup` | Recent git changes summary | - |
-| `/context` | Analyze context usage | - |
-| `/pr` | Prepare pull request | - |
+| Command | Purpose |
+|---------|---------|
+| `/api` | Scaffold REST APIs (Laravel + React) |
+| `/blueprint` | Decompose features into detailed task plans |
+| `/debug` | Systematic debugging (Laravel + React) |
+| `/deploy` | DevOps automation (Docker, CI/CD, nginx) |
+| `/migrate` | Database migrations and schema design |
+| `/n8n` | Build and debug n8n workflows |
+| `/refactor` | Code refactoring with SOLID principles |
+| `/security-scan` | OWASP security checklist |
+| `/code-review` | Deep code review for files/directories |
+| `/testing` | Generate or improve tests |
+| `/documentation` | Generate or update documentation |
+| `/commit` | Conventional commits with co-authorship |
+| `/review-pr` | PR review with quality/security checklist |
+| `/catchup` | Recent git changes summary |
+| `/context` | Analyze context usage |
+| `/pr` | Prepare pull request |
 
 ## Design Pattern Triggers
 
@@ -34,19 +34,19 @@
 
 Delegate to subagents to preserve main context. Each agent runs in its own context window.
 
-| When You Need To | Delegate To | Model |
-|------------------|-------------|-------|
-| Explore codebase, find files, understand structure | `Explore` (built-in) | - |
-| Design architecture, evaluate patterns, plan system design | `elite-project-architect` | opus |
-| Build React/Vue/Laravel components, implement features | `elite-fullstack-developer` | opus |
-| Design schemas, optimize queries, plan migrations | `elite-database-specialist` | opus |
-| Set up CI/CD, Docker, Kubernetes, cloud infra | `elite-devops-automation` | opus |
-| Profile performance, find bottlenecks, optimize | `elite-performance-optimizer` | opus |
-| Coordinate multi-phase features (PACT workflow) | `elite-project-orchestrator` | opus |
-| Run tests and report failures | `test-runner` | haiku |
-| Audit dependencies for vulnerabilities | `dependency-auditor` | haiku |
-| Research third-party API docs, library usage | `documentation-researcher` | haiku |
-| Analyze error logs, stack traces, crashes | `log-analyzer` | sonnet |
+| When You Need To | Delegate To |
+|------------------|-------------|
+| Explore codebase, find files, understand structure | `Explore` (built-in) |
+| Design architecture, evaluate patterns, plan system design | `elite-project-architect` |
+| Build React/Vue/Laravel components, implement features | `elite-fullstack-developer` |
+| Design schemas, optimize queries, plan migrations | `elite-database-specialist` |
+| Set up CI/CD, Docker, Kubernetes, cloud infra | `elite-devops-automation` |
+| Profile performance, find bottlenecks, optimize | `elite-performance-optimizer` |
+| Coordinate multi-phase features (PACT workflow) | `elite-project-orchestrator` |
+| Run tests and report failures | `test-runner` |
+| Audit dependencies for vulnerabilities | `dependency-auditor` |
+| Research third-party API docs, library usage | `documentation-researcher` |
+| Analyze error logs, stack traces, crashes | `log-analyzer` |
 
 ### Delegation Rules
 - **Always delegate**: file exploration, test running, log analysis, dependency auditing
