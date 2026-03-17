@@ -86,17 +86,6 @@
         ]
       }
     ],
-    "UserPromptSubmit": [
-      {
-        "matcher": "*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "$HOME/.claude/hooks/check_ip_access.sh"
-          }
-        ]
-      }
-    ],
     "PreToolUse": [
       {
         "matcher": "Task",
@@ -202,6 +191,11 @@
       }
     ]
   },
+  "statusLine": {
+    "type": "command",
+    "command": "npx -y ccstatusline@latest",
+    "padding": 0
+  },
   "enabledPlugins": {
     "playwright@claude-plugins-official": true,
     "code-simplifier@claude-plugins-official": true,
@@ -210,7 +204,10 @@
     "superpowers@claude-plugins-official": true,
     "figma@claude-plugins-official": true,
     "php-lsp@claude-plugins-official": true,
-    "typescript-lsp@claude-plugins-official": true
+    "typescript-lsp@claude-plugins-official": true,
+    "context7@claude-plugins-official": true,
+    "greptile@claude-plugins-official": true,
+    "security-guidance@claude-plugins-official": true
   },
   "outputStyle": "Concise",
   "sandbox": {
@@ -231,33 +228,15 @@
       "cargo"
     ]
   },
+  "effortLevel": "high",
   "experimental": {
     "agentTeams": true,
     "extendedContext": true,
     "adaptiveThinking": true,
     "parallelToolCalls": true
   },
-  "mcpServers": {
-    "n8n-mcp": {
-      "command": "npx",
-      "args": [
-        "n8n-mcp"
-      ],
-      "env": {
-        "MCP_MODE": "stdio",
-        "LOG_LEVEL": "error",
-        "DISABLE_CONSOLE_OUTPUT": "true",
-        "N8N_API_URL": "https://sync.wl.team",
-        "N8N_API_KEY": "$N8N_API_KEY"
-      }
-    }
-  },
   "feedbackSurveyState": {
     "lastShownTime": 1754282786871
   },
-  "preferredNotifChannel": "terminal_bell",
-  "statusLine": {
-    "type": "command",
-    "command": "~/.claude/statusline.sh"
-  }
+  "preferredNotifChannel": "terminal_bell"
 }
