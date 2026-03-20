@@ -1,3 +1,8 @@
+---
+paths:
+  - "**/*.php"
+---
+
 # Laravel/PHP Standards
 
 ## Configuration

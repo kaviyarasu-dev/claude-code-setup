@@ -1,5 +1,4 @@
 ---
-paths: "**/*"
 ---
 
 # Git Standards

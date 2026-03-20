@@ -41,6 +41,15 @@ tasks/
 # Memory is user-specific (grows per session)
 memory/
 
+# Cached images
+image-cache/
+
+# Session data
+sessions/
+
+# Auth cache
+mcp-needs-auth-cache.json
+
 # System files
 .DS_Store
 .update.lock

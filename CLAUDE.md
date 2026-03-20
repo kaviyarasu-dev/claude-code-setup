@@ -93,22 +93,4 @@ These overlap with local skills or agents. Use the alternatives instead:
 
 ## Project Setup
 
-Always include these cross-cutting rules in project `CLAUDE.md`:
-
-```markdown
-@~/.claude/rules/coding-principles.md
-@~/.claude/rules/security.md
-@~/.claude/rules/testing.md
-@~/.claude/rules/git.md
-@~/.claude/rules/refactoring-guardrails.md
-@~/.claude/rules/frontend-design.md  # If project has UI
-```
-
-Then add language-specific rules:
-
-```markdown
-@~/.claude/rules/typescript.md  # TypeScript/JavaScript
-@~/.claude/rules/python.md      # Python
-@~/.claude/rules/go.md          # Go
-@~/.claude/rules/laravel.md     # Laravel/PHP 8.5
-```
+Rules in `~/.claude/rules/` auto-load based on their `paths` frontmatter — no `@` references needed in project CLAUDE.md files. Remove any existing `@~/.claude/rules/...` lines from project CLAUDE.md files to avoid redundant context loading.

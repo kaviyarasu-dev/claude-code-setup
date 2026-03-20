@@ -1,5 +1,12 @@
 ---
-paths: "**/*"
+paths:
+  - "**/*.test.*"
+  - "**/*.spec.*"
+  - "**/tests/**"
+  - "**/test/**"
+  - "**/*Test.php"
+  - "**/*_test.go"
+  - "**/test_*.py"
 ---
 
 # Testing Standards

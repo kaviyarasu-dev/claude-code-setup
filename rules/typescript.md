@@ -1,5 +1,9 @@
 ---
-paths: "**/*.ts, **/*.tsx, **/*.js, **/*.jsx"
+paths:
+  - "**/*.ts"
+  - "**/*.tsx"
+  - "**/*.js"
+  - "**/*.jsx"
 ---
 
 # TypeScript/JavaScript Standards
