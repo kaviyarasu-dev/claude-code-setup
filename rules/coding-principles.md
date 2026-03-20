@@ -1,5 +1,13 @@
 ---
-paths: "**/*"
+paths:
+  - "**/*.ts"
+  - "**/*.tsx"
+  - "**/*.js"
+  - "**/*.jsx"
+  - "**/*.py"
+  - "**/*.php"
+  - "**/*.go"
+  - "**/*.vue"
 ---
 
 # Coding Principles

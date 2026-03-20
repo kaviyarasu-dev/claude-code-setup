@@ -1,5 +1,12 @@
 ---
-paths: "**/*"
+paths:
+  - "**/*.ts"
+  - "**/*.tsx"
+  - "**/*.js"
+  - "**/*.jsx"
+  - "**/*.py"
+  - "**/*.php"
+  - "**/*.go"
 ---
 
 # Security Standards
